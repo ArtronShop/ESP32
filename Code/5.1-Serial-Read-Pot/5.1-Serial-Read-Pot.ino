@@ -1,0 +1,10 @@
+#define POT_PIN (35)  // กำหนดแทนที่ POT_PIN ด้วย 2
+
+void setup() {
+  Serial.begin(115200); // เริ่มต้นใช้ Serial ความเร็ว 115200
+}
+
+void loop() {
+  Serial.println(analogRead(POT_PIN));
+  delay(100);
+}
