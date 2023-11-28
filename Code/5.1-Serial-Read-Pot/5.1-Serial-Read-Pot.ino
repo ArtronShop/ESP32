@@ -5,6 +5,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(analogRead(POT_PIN));
-  delay(100);
+  Serial.println(analogRead(POT_PIN)); // แสดงผลที่แอนะล็อกที่อ่านได้
+  delay(100); // หน่วงเวลา 0.1 วินาที
 }

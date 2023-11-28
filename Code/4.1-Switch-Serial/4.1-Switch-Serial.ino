@@ -6,7 +6,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("Switch = ");
-  Serial.println(digitalRead(SW_PIN));
-  delay(100);
+  Serial.print("Switch = "); // ส่งข้อความไปที่ Serial Monitor
+  Serial.println(digitalRead(SW_PIN)); // ส่งค่าที่อ่านได้ digitalRead()
+  delay(100); // หน่วงเวลา 0.1 วินาที
 }

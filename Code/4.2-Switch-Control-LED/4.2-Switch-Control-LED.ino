@@ -8,9 +8,9 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(SW_PIN) == 1) {
-    while(digitalRead(SW_PIN) == 1) delay(10);
-    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+  if (digitalRead(SW_PIN) == 1) { // ถ้าอ่านค่าสวิตช์ได้ 1
+    while(digitalRead(SW_PIN) == 1) delay(10); // วนรอบหากยังอ่านได้ 1 (วนรอปล่อยสวิตช์)
+    digitalWrite(LED_PIN, !digitalRead(LED_PIN)); // สั่งเปิด-ปิดหลอดแอลอีดี
   }
-  delay(100);
+  delay(100); // หน่วงเวลา 0.1 วินาที
 }

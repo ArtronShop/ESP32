@@ -8,10 +8,10 @@ void setup() {
 
 void loop() {
   digitalWrite(LED1_PIN, HIGH); // สั่งขาที่ต่อ LED1 เอาต์พุตลอจิก 1
-  digitalWrite(LED2_PIN, HIGH); // สั่งขาที่ต่อ LED2 เอาต์พุตลอจิก 1
+  digitalWrite(LED2_PIN, LOW); // สั่งขาที่ต่อ LED2 เอาต์พุตลอจิก 0
   delay(500); // หน่วงเวลา 0.5 วินาที
   digitalWrite(LED1_PIN, LOW); // สั่งขาที่ต่อ LED1 เอาต์พุตลอจิก 0
-  digitalWrite(LED2_PIN, LOW); // สั่งขาที่ต่อ LED2 เอาต์พุตลอจิก 0
+  digitalWrite(LED2_PIN, HIGH); // สั่งขาที่ต่อ LED2 เอาต์พุตลอจิก 1
   delay(500); // หน่วงเวลา 0.5 วินาที
 }
 

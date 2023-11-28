@@ -6,8 +6,8 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(SW_PIN) == 1) {
-    Serial.println("Pressed");
+  if (digitalRead(SW_PIN) == 1) { // ถ้าอ่านค่าสวิตช์ได้ 1
+    Serial.println("Pressed"); // ส่งข้อความไปที่ Serial Monitor
   }
-  delay(100);
+  delay(100); // หน่วงเวลา 0.1 วินาที
 }

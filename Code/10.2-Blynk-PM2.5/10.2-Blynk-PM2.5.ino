@@ -60,11 +60,11 @@ void loop()
 {
   Blynk.run();
 
-  PMS::DATA data;
-  if (pms.read(data)) {
-    Blynk.virtualWrite(V0, data.PM_AE_UG_1_0);
-    Blynk.virtualWrite(V1, data.PM_AE_UG_2_5);
-    Blynk.virtualWrite(V2, data.PM_AE_UG_10_0);
+  PMS::DATA data; // ประกาศตัวแปรชื่อ data ใช้เก็บค่าฝุ่นที่เซ็นเซอร์วัดได้
+  if (pms.read(data)) { // ถ้าอ่านค่าจากเซ็นเซอร์วัดฝุ่นสำเร็จ
+    Blynk.virtualWrite(V0, data.PM_AE_UG_1_0); // ส่งค่าในตัวแปร data.PM_AE_UG_1_0 ไปที่ V0
+    Blynk.virtualWrite(V1, data.PM_AE_UG_2_5); // ส่งค่าในตัวแปร data.PM_AE_UG_2_5 ไปที่ V1
+    Blynk.virtualWrite(V2, data.PM_AE_UG_10_0); // ส่งค่าในตัวแปร data.PM_AE_UG_10_0 ไปที่ V2
   }
 }
 
